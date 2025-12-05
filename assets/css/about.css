@@ -1,0 +1,20 @@
+.about-card {
+    max-width: 900px;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #333;
+}
+
+.about-card h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    font-family: 'serif';
+    background: linear-gradient(90deg, #3f0909, #aa3304, #cb8543);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
