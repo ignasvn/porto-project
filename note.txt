@@ -1,0 +1,4 @@
+Perbaikan:
+perbaiki tampilan navbar
+buat supaya bisa login
+selesaikan software dan bahasa yang digunakan

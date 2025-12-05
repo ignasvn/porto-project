@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+/* Bagian kiri (Logo) */
+.logo-navbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-navbar a {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.logo-navbar img {
+  height: 40px;
+  width: auto;
+}
+
+/* Bagian tengah (Menu) */
+.menu-navbar {
+  display: flex;
+  justify-content: center;
+  flex: 1; /* Biar menempati ruang tengah */
+  gap: 10px;
+}
+
+.menu-navbar a {
+  color: #000;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+/* Hover & aktif */
+.menu-navbar a:hover,
+.menu-navbar a.active {
+  background-color: #ddd;
+  color: black;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Bagian kanan (Login) */
+.login-navbar a {
+  background-color: #3f09092b;
+  color: black;
+  margin-right: 20px;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.login-navbar a:hover {
+  background-color: #3f09092b;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-navbar {
+    order: 3;
+    flex-wrap: wrap;
+  }
+
+  .login-navbar {
+    order: 2;
+    margin: 5px 0;
+  }
+}
+/* ====== CONTENT ====== */
+/* Container utama untuk konten */
+.content {
+  display: flex;               /* Gunakan flexbox untuk layout */
+  justify-content: center;     /* Tengah secara horizontal */
+  align-items: flex-start;     /* Rata atas */
+  padding: 20px;               /* Jarak dalam */
+  gap: 20px;                   /* Jarak antar elemen */
+  margin-top: 50px;           /* Jarak dari navbar supaya gak ketimpa */
+}
+
+/* Style untuk left-content */
+.left-content {
+  max-width: 300px;           /* Lebar maksimal agar teks tidak terlalu melebar */
+  margin: 0px 0px 60px auto;     /* Tengah, beri jarak atas supaya gak ketimpa navbar */
+  padding: 30px;               /* Jarak dalam biar teks lega */
+  background-color: #3f09092b;   /* Warna latar lembut */
+  border-radius: 15px;         /* Sudut membulat */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+  line-height: 1.6;            /* Spasi antarbaris nyaman dibaca */
+  color: #333;                 /* Warna teks */
+  font-family: 'Poppins', sans-serif;
+}
+ .left-content h5 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 20px;
+}
+.left-content img {
+  width: 100%;                 /* Biar gambar memenuhi container */
+  border-radius: 15px;         /* Sudut membulat */
+  margin-bottom: 20px;         /* Jarak bawah biar gak nempel teks */
+}
+
+/* Style untuk konten tengah */
+.center-content {
+  max-width: 600px;           /* Lebar maksimal agar teks tidak terlalu melebar */
+  margin: 0px auto 60px 0px;     /* Tengah, beri jarak atas supaya gak ketimpa navbar */
+  padding: 30px;               /* Jarak dalam biar teks lega */
+  background-color: #3f09092b;   /* Warna latar lembut */
+  border-radius: 15px;         /* Sudut membulat */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+  line-height: 1.6;            /* Spasi antarbaris nyaman dibaca */
+  color: #333;                 /* Warna teks */
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Kalau kamu mau judul di dalam content */
+.center-content h1, .content h2 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+/* Kalau kamu mau paragraf rapi */
+.center-content p {
+  text-align: justify;
+  margin-bottom: 0px;
+}
+
+/* Style untuk footer */
+/* ====== FOOTER ====== */
+.footer {
+  background-color: #333;         /* Warna gelap biar kontras */
+  color: rgb(242, 242, 242);       /* Warna teks terang */
+  text-align: center;                /* Rata tengah */
+  padding: 20px 10px;                 /* Jarak atas-bawah nyaman */
+  border-top: 3px solid #aa330443; /* Garis pemisah tipis (warna selaras navbar) */
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  position: relative;                /* Supaya bisa diatur jika pakai posisi fixed */
+}
+
+/* Link di dalam footer */
+.footer a {
+  color: #cb8543e1;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #ddd;
+}
+
+/* Responsive footer */
+@media screen and (max-width: 600px) {
+  .footer {
+    font-size: 14px;
+    padding: 15px;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+  <div class="logo-navbar">
+    <a href="index.html">
+      <img src="assets/image/logo/porto-resize.png" alt="">
+    </a>
+  </div>
+
+  <div class="menu-navbar">
+    <a href="index.html">Our Page</a>
+    <a href="kevin.html">Kevin</a>
+    <a href="panji.html">Panji</a>
+    <a class="active" href="jisso.html">Jisso Black Pink</a>
+    <a href="denny.html">Denny</a>
+    <a href="rian.html">Rian</a>
+  </div>
+
+  <div class="login-navbar">
+    <a href="login.html">Log In</a>
+  </div>
+</div>
+
+    <div class="content">
+  <!-- Konten sebelah kiri -->
+  <div class="left-content">
+      <img src="assets/image/jisso.png" alt="Avatar" class="avatar">
+      <h2>Jisso Blackpink</h2>
+      <h5>Kim Ji-soo (김지수)</h5>
+      <p style="white-space: pre;">Nama Panggung: Jisoo
+Tempat, Tanggal Lahir: Gunpo, Gyeonggi, 
+Korea Selatan — 3 Januari 1995
+Kebangsaan: Korea Selatan
+Profesi: Penyanyi, Aktris, Model
+Grup: BLACKPINK 
+(anggota tertua dan visual grup)
+Agensi: YG Entertainment</p>
+      
+  </div>
+  
+  <!-- Konten tengah -->
+  <div class="center-content">
+    <h1>Apaitu Portofolio?</h1>
+    <p>
+      Portofolio adalah kumpulan karya, pengalaman, dan pencapaian yang menunjukkan kemampuan seseorang dalam bidang tertentu.
+      Biasanya, portofolio berisi data diri singkat, keahlian, proyek yang pernah dibuat, dan kontak yang bisa dihubungi.
+    </p>
+  
+    <h2>Apa yang Ada di Dalam Portofolio?</h2>
+    <p>
+      Dalam sebuah portofolio, biasanya terdapat bagian-bagian seperti:
+    </p>
+    <ul>
+      <li>Profil singkat atau biodata</li>
+      <li>Daftar keahlian (skills)</li>
+      <li>Proyek atau hasil karya</li>
+      <li>Pendidikan dan pengalaman</li>
+      <li>Kontak atau media sosial</li>
+    </ul>
+  </div>
+</div>
+
+  <!-- FOOTER -->
+<div class="footer">
+  <p>&copy; 2025 Ignatius Kevin Gunawan. All rights reserved.</p>
+  <p>
+    <a href="https://instagram.com/ignasvn">Instagram</a> |
+    <a href="https://github.com/ignasvn">GitHub</a> |
+    <a href="mailto:kevindiagon@gmail.com">Email</a>
+  </p>
+</div>
+
+</body>
+</html>
