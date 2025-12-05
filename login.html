@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Portofolio</title>
-    <link rel="stylesheet" href="assets/css/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Portofolio</title>
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/login.css"> <!-- File baru khusus login -->
 </head>
 <body>
 
 <!-- NAVBAR -->
 <div class="navbar">
-    <a href="index.html"><div class="logo-navbar"></div></a>
+  <a href="index.html"><div class="logo-navbar"></div></a>
 
-    <div class="menu-navbar">
-        <a href="index.html">Home</a>
-        <a href="beranda.html">Beranda</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </div>
+  <div class="menu-navbar">
+    <a href="index.html">Home</a>
+    <a href="beranda.html">Beranda</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
 
-    <div class="login-navbar">
-        <a class="active" href="login.html">Log In</a>
-    </div>
+  <div class="login-navbar">
+    <a class="active" href="login.html">Log In</a>
+  </div>
 </div>
 
 <!-- CONTENT -->
 <div class="content" style="padding-top: 80px;">
-    <h1>Login</h1>
+  <h1>Silahkan Login untuk menikmati fitur lebih lengkap!</h1>
 
-    <form style="max-width: 350px; width: 100%; display: flex; flex-direction: column; gap: 15px;">
-        <input type="text" placeholder="Username" required
-            style="padding: 12px; border-radius: 8px; border: 1px solid #bbb;">
-        <input type="password" placeholder="Password" required
-            style="padding: 12px; border-radius: 8px; border: 1px solid #bbb;">
-        <button type="submit"
-            style="padding: 12px; border-radius: 8px; border: none; background: #cb8543; color: white; font-size: 16px;">
-            Log In
-        </button>
+  <div class="login-card">
+    <div class="login-logo"></div>
+    <form>
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" placeholder="" required>
+        <label for="password">Password</label>
+        <input type="text" name="password" id="password" placeholder="" required>
+        <a href="#" class="forgot-link">Forgot password?</a>
+        <button type="submit" name="submit" id="submit">Login
     </form>
+  </div>
 </div>
 
 <!-- FOOTER -->
 <div class="footer">
-    <p>&copy; 2025 Ignatius Kevin Gunawan. All rights reserved.</p>
-    <p>
-        <a href="https://instagram.com/ignasvn">Instagram</a> |
-        <a href="https://github.com/ignasvn">GitHub</a> |
-        <a href="mailto:kevindiagon@gmail.com">Email</a>
-    </p>
+  <p>&copy; 2025 Ignatius Kevin Gunawan. All rights reserved.</p>
+  <p>
+    <a href="https://instagram.com/ignasvn">Instagram</a> |
+    <a href="https://github.com/ignasvn">GitHub</a> |
+    <a href="mailto:kevindiagon@gmail.com">Email</a>
+  </p>
 </div>
 
 </body>
