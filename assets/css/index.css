@@ -82,36 +82,5 @@
     height: 300px;
   }
 
-  /* Style untuk footer */
-  /* ====== FOOTER ====== */
-  .footer {
-    background-color: #333;         /* Warna gelap biar kontras */
-    color: rgb(242, 242, 242);       /* Warna teks terang */
-    text-align: center;                /* Rata tengah */
-    padding: 20px 10px;                 /* Jarak atas-bawah nyaman */
-    border-top: 3px solid #aa330443; /* Garis pemisah tipis (warna selaras navbar) */
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    position: relative;                /* Supaya bisa diatur jika pakai posisi fixed */
-  }
-
-  /* Link di dalam footer */
-  .footer a {
-    color: #cb8543e1;
-    text-decoration: none;
-    margin: 0 10px;
-    transition: color 0.3s;
-  }
-
-  .footer a:hover {
-    color: #ddd;
-  }
-
-  /* Responsive footer */
-  @media screen and (max-width: 600px) {
-    .footer {
-      font-size: 14px;
-      padding: 15px;
-    }
-  }
+  
 
