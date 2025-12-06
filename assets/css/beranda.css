@@ -1,0 +1,177 @@
+/* Form Submit Portfolio */
+.portfolio-form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submit-btn {
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.submit-btn:active {
+    transform: scale(0.98);
+}
+
+/* ====== FORM SUBMIT PORTFOLIO ====== */
+.form-submit-portofolio {
+    max-width: 600px;
+    margin: 100px auto 40px;
+    padding: 30px;
+    background: #ddd;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.form-submit-portofolio h2 {
+    margin-bottom: 25px;
+    color: #0b1320;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.form-submit-portofolio form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-submit-portofolio label {
+    display: block;
+    margin-bottom: 6px;
+    color: #2d3748;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.form-submit-portofolio input[type="text"],
+.form-submit-portofolio input[type="email"],
+.form-submit-portofolio input[type="file"],
+.form-submit-portofolio textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e0;
+    border-radius: 8px;
+    background: #ffffff;
+    font-size: 15px;
+    color: #1a202c;
+    font-family: inherit;
+    transition: border-color 200ms ease, box-shadow 200ms ease;
+    box-sizing: border-box;
+}
+
+.form-submit-portofolio input::placeholder,
+.form-submit-portofolio textarea::placeholder {
+    color: #a0aec0;
+}
+
+.form-submit-portofolio input:focus,
+.form-submit-portofolio textarea:focus {
+    outline: none;
+    border-color: #cb8543;
+    box-shadow: 0 0 0 3px rgba(203, 133, 67, 0.1);
+}
+
+.form-submit-portofolio textarea {
+    resize: vertical;
+    min-height: 120px;
+    font-size: 14px;
+}
+
+.form-submit-portofolio button,
+.form-submit-portofolio input[type="submit"] {
+    margin-top: 12px;
+    padding: 12px 32px;
+    background: #fff;
+    color: #111;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 120ms ease, box-shadow 200ms ease, background 200ms ease;
+    align-self: center;
+}
+
+.form-submit-portofolio button:hover,
+.form-submit-portofolio input[type="submit"]:hover {
+    background: linear-gradient(90deg, #b56f37 0%, #a15f30 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(203, 133, 67, 0.25);
+}
+
+.form-submit-portofolio button:active,
+.form-submit-portofolio input[type="submit"]:active {
+    transform: translateY(0);
+}
+
+/* Responsive: stack form labels & inputs nicely on mobile */
+@media (max-width: 600px) {
+    .form-submit-portofolio {
+        margin: 80px 16px 40px;
+        padding: 20px;
+    }
+    .form-submit-portofolio h2 {
+        font-size: 24px;
+    }
+    .form-submit-portofolio form {
+        gap: 16px;
+    }
+}

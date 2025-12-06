@@ -1,32 +1,25 @@
-/* Style untuk footer */
-  /* ====== FOOTER ====== */
-  .footer {
-    background-color: #333;         /* Warna gelap biar kontras */
-    color: rgb(242, 242, 242);       /* Warna teks terang */
-    text-align: center;                /* Rata tengah */
-    padding: 20px 10px;                 /* Jarak atas-bawah nyaman */
-    border-top: 3px solid #aa330443; /* Garis pemisah tipis (warna selaras navbar) */
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    position: relative;                /* Supaya bisa diatur jika pakai posisi fixed */
-  }
+.footer {
+  background: #0e0e0e;
+  color: #ffffff;
+  text-align: center;
+  padding: 25px 20px;
+  margin-top: 50px;
+  border-top: 2px solid rgba(255,255,255,0.12);
+}
 
-  /* Link di dalam footer */
-  .footer a {
-    color: #cb8543e1;
-    text-decoration: none;
-    margin: 0 10px;
-    transition: color 0.3s;
-  }
+.footer p {
+  margin: 6px 0;
+  font-size: 15px;
+}
 
-  .footer a:hover {
-    color: #ddd;
-  }
+.footer a {
+  color: #ff9d00;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
 
-  /* Responsive footer */
-  @media screen and (max-width: 600px) {
-    .footer {
-      font-size: 14px;
-      padding: 15px;
-    }
-  }
+.footer a:hover {
+  color: #ffd65a;
+  text-shadow: 0 0 8px rgba(255, 174, 0, 0.7);
+}

@@ -1,5 +1,6 @@
 .about-card {
     max-width: 900px;
+    margin: 60px auto;
     padding: 40px;
     background: #ffffff;
     border-radius: 20px;

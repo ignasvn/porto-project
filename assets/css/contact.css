@@ -1,0 +1,109 @@
+/* contact.css — Styles for contact.html
+   Targets the existing structure in contact.html (no class on form)
+*/
+
+/* Basic page layout */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: #fff;
+  color: #111827;
+}
+
+.content {
+  max-width: 980px;
+  margin: 48px auto;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.content h1 {
+  font-size: 1.75rem;
+  line-height: 1.15;
+  margin-bottom: 6px;
+  text-align: center;
+  color: #0b1320;
+}
+
+/* Form wrapper — the HTML form already has inline styles for layout,
+   but these rules will standardize appearance and provide focus states */
+.contact-form {
+  width: 100%;
+  max-width: 450px; /* matches markup in contact.html */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db; /* subtle gray */
+  background: #ffffff;
+  font-size: 16px;
+  color: #0b1320;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+  box-sizing: border-box;
+  resize: vertical;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #9ca3af;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #a16207; /* amber/dark-orange to match button tone */
+  box-shadow: 0 4px 12px rgba(161, 98, 7, 0.08);
+}
+
+.contact-form button[type="submit"] {
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: none;
+  background: #cb8543; /* existing color from inline style */
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 120ms ease, background 160ms ease, box-shadow 160ms ease;
+}
+
+.content button[type="submit"]:hover {
+  background: #b56f37;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(181,111,55,0.08);
+}
+
+.content button[type="submit"]:active {
+  transform: translateY(0);
+}
+
+/* Small helper for form-wide error/success messaging (if added later) */
+.form-message {
+  width: 100%;
+  max-width: 450px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  display: none; /* hidden by default; JS can toggle .show */
+}
+
+.form-message.show { display: block; }
+.form-message.success { background: #ecfdf5; color: #065f46; border: 1px solid #bbf7d0; }
+.form-message.error { background: #fffbeb; color: #92400e; border: 1px solid #fde68a; }
+
+/* Responsive tweaks: keep content margin smaller on small screens */
+@media (max-width: 480px) {
+  .content { margin: 28px auto; }
+  .content h1 { font-size: 1.5rem; }
+  .contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea { font-size: 15px; }
+}
+
+/* Ensure links inside footer are readable when footer.css is present */
+.footer a { color: #0b61a8; text-decoration: underline; }
