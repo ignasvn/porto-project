@@ -10,7 +10,7 @@
 }
 
 .content h1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Segoe UI", sans-serif;
   font-size: 36px;
   background: linear-gradient(90deg, #3f0909, #aa3304, #cb8543);
   -webkit-background-clip: text;
@@ -81,3 +81,27 @@
   background-size: cover;
   height: 300px;
 }
+
+.xporto a.new::before {
+  content: "add";
+  font-family: "Material Symbols Outlined";
+  font-size: 80px;    /* atur ukuran icon */
+  color: #333;         /* warna icon */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 60px;
+}
+.xporto a.new {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 300px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
