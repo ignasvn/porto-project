@@ -4,7 +4,7 @@
 
 /* Basic page layout */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-family: inherit;
   background: #fff;
   color: #111827;
 }
