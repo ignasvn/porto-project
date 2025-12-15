@@ -1,21 +1,32 @@
+@import url("css_reset.css");
+.content{
+margin: 125px auto 65px auto;
+}
+
 .about-card {
     max-width: 900px;
-    margin: 60px auto;
-    padding: 40px;
-    background: #ffffff;
+    padding: 15px 30px;
+    margin: auto;
     border-radius: 20px;
-    box-shadow: 0 6px 25px rgba(0,0,0,0.15);
-    text-align: center;
-    font-size: 18px;
-    line-height: 1.7;
-    color: #333;
+    background-color: #eee;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+}
+
+.about-card .about-title {
+    margin-bottom: 20px;
 }
 
 .about-card h1 {
-    font-size: 38px;
-    margin-bottom: 20px;
-    font-family: 'serif';
+    text-align: center;
+    font: bold normal 38px "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(90deg, #3f0909, #aa3304, #cb8543);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+.about-card .p {
+    text-align: center;
+    font: normal normal 16px/1.8 "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
 }

@@ -1,3 +1,4 @@
+@import url("css_reset.css");
 /* ====== FORM SUBMIT PORTFOLIO ====== */
 .form-submit-portofolio {
     max-width: 600px;
@@ -55,7 +56,7 @@
 .form-submit-portofolio input:focus,
 .form-submit-portofolio textarea:focus {
     outline: none;
-    border-color: ##ddd;
+    border-color: #ddd;
     box-shadow: 0 0 0 3px rgba(203, 133, 67, 0.1);
 }
 

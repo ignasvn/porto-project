@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panji's Portofolio</title>
     <link rel="stylesheet" href="../assets/css/navbar.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
     <style>
         /* ===== RESET ===== */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
+            font-family: inherit; /*Arial, sans-serif*/
         }
 
         /* ===== BODY ===== */
@@ -35,6 +36,12 @@
         .sidebar {
             flex: 1;
             text-align: center;
+            background-color: #fff;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            box-sizing: border-box;
+            border-radius: 15px;
+            padding: 20px;
+            height: fit-content;
         }
 
         .sidebar img {
@@ -69,6 +76,11 @@
             margin-bottom: 15px;
             color: #1b1b1b;
             font-size: 22px;
+        }
+
+        .story .pengenalan {
+            text-align: justify;
+            text-indent: 40px;
         }
 
         /* ===== PENDIDIKAN ===== */
@@ -167,6 +179,14 @@
                 <img src="../assets/image/img_panji/profil_panji.jpg" alt="Foto Steven Panji">
             </picture>
             <h3>Steven Panji</h3>
+
+            <div class="kontak">
+                <br><hr><br>
+                <h4>Kontak Saya:</h4>
+                <p><b>Telepon :</b> <a href="tel:091260572797">+6281260572797</a></p>
+                <p><b>Email :</b> <a href="mailto:stevenpanji458@gmail.com">stevenpanji458@gmail.com</a></p>
+                <p><b>Instagram: </b> <a href="https://www.instagram.com/steven.panji">@steven.panji</a></p>
+            </div>
         </div>
 
         <!-- KONTEN KANAN -->
@@ -186,8 +206,8 @@
             <div class="story">
                 <h2>Tentang Saya</h2>
                 <p class="pengenalan">
-                    Halo, saya Panji. Saya adalah seseorang yang senang belajar hal baru,
-                    terutama di bidang teknologi dan pemrograman. Di waktu luang, saya suka
+                    Halo, saya Panji. Saya adalah mahasiswa yang senang belajar hal baru,
+                    terutama di bidang teknologi dan pemrograman dasar. Di waktu luang, saya suka
                     mencoba hal-hal baru dan menikmati waktu bersama teman. Saya percaya
                     bahwa setiap langkah kecil bisa membawa perubahan besar bila dilakukan
                     dengan konsisten.
@@ -220,13 +240,16 @@
                 </div>
             </div>
 
-            <div class="kontak">
-                <h2>Untuk Lebih Lengkap Silahkan Kontak Saya</h2>
-                <p><b>Telepon :</b> <a href="tel:091260572797">+6281260572797</a></p>
-            </div>
-
         </div>
     </div>
-
+    <!-- FOOTER -->
+     <div class="footer">
+    <p>&copy; 2025 Steven Panji. All rights reserved.</p>
+    <p>
+      <a href="https://instagram.com/steven.panji">Instagram</a> |
+      <a href="https://tiktok.com/@ss.stvnn">Tiktok</a> |
+      <a href="6281260572797">Whatssapp</a>
+    </p>
+  </div>
 </body>
 </html>

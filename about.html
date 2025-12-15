@@ -3,57 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Portofolio</title>
-    <link rel="stylesheet" href="assets/css/about.css">
+    <title>About - Porto</title>
     <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/about.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.0/css/all.min.css">
 </head>
 <body>
 
 <!-- NAVBAR -->
 <div class="navbar">
-    <a href="index.html"><div class="logo-navbar"></div></a>
+  <a class="logo-navbar" href="index.html"></a>
 
-    <div class="menu-navbar">
-        <a href="index.html">Home</a>
-        <a href="beranda.html">Beranda</a>
-        <a class="active" href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </div>
+  <!-- Hamburger Toggle -->
+  <input type="checkbox" id="nav-toggle">
+  <label for="nav-toggle" class="nav-toggle">
+    ☰
+  </label>
 
-    <div class="login-navbar">
-        <a href="login.html">Log In</a>
-    </div>
+  <!-- MENU -->
+  <div class="menu-navbar">
+    <a href="index.html">Home</a>
+    <a href="beranda.html">Beranda</a>
+    <a class="active" href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a class="login-mobile" href="login.html">Log In</a>
+  </div>
+
+  <!-- LOGIN DESKTOP -->
+  <a class="login-navbar" href="login.html">Log In</a>
 </div>
 
 <!-- CONTENT -->
-<div class="content" style="padding-top: 30px;">
+<div class="content">
     <div class="about-card">
-        <h1>Tentang Website Porto</h1>
-        <p>
-            Website <strong>Porto</strong> adalah platform yang menampilkan kumpulan portofolio
-            milik berbagai individu dalam satu tempat. Tujuan utama website ini adalah untuk
-            memudahkan siapa pun dalam memamerkan hasil karya atau pengalaman mereka secara
-            profesional, sekaligus memberikan referensi dan inspirasi bagi pengunjung.
-        </p>
-        <p>
-            Website ini dibuat sebagai bagian dari tugas mata kuliah
-            <strong>Pemrograman Berbasis Web 1</strong> dengan fokus pada penerapan konsep HTML
-            dan CSS untuk membangun tampilan statis yang menarik.
-            Pada mata kuliah <strong>PBW 2</strong>, website ini akan dikembangkan menjadi sistem dinamis.
-        </p>
+        <div class="about-title">
+            <h1>About the Porto Website</h1>
+        </div>
+        <div class="p">
+            <p>
+               The <strong>Porto</strong> website is a platform that displays a collection of portfolios from various individuals in one place. The main goal of this website is to make it easy for anyone to showcase their work or experience professionally, while also providing references and inspiration for visitors.
+            </p>
+            <p>
+               This website was created as part of an assignment for the <strong>Web-Based Programming 1</strong> course, focusing on applying HTML and CSS concepts to build attractive static displays. In the <strong>Web-Based Programming 2</strong> course, this website will be developed into a dynamic system.
+            </p>
+        </div>
     </div>
 </div>
 
 <!-- FOOTER -->
-<div class="footer">
-    <p>&copy; 2025 Ignatius Kevin Gunawan. All rights reserved.</p>
-    <p>
-        <a href="https://instagram.com/ignasvn">Instagram</a> |
-        <a href="https://github.com/ignasvn">GitHub</a> |
-        <a href="mailto:kevindiagon@gmail.com">Email</a>
-    </p>
-</div>
+<footer class="footer">
+  <p>&copy; 2025 Kevin Gunawan. All rights reserved.</p>
+  <p>
+    <a href="https://instagram.com/ignasvn"><i class="fa-brands fa-instagram fa-flip fa-lg"></i></a> |
+    <a href="https://github.com/ignasvn"><i class="fa-brands fa-github fa-bounce fa-lg"></i></a> |
+    <a href="tel:081313777672"><i class="fa-brands fa-whatsapp fa-beat fa-lg"></i></a>
+  </p>
+</footer>
 
 </body>
 </html>

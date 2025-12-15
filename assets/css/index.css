@@ -1,38 +1,68 @@
-/* ====== CONTENT ====== */
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-  padding: 20px;
-  gap: 20px;
+@import url("css_reset.css");
+
+*{
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
-.content h1 {
-  font-family: "Segoe UI", sans-serif;
-  font-size: 36px;
-  background: linear-gradient(90deg, #3f0909, #aa3304, #cb8543);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+.bg-content{
+  /* background-image: url("../image/bg/wood.gif");
+  background-size: 85px; */
+}
+
+/* ====== CONTENT ====== */
+.content {
+  background-image: url("../image/bg/wood-terang.jpg");
+  background-size: 85px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+  position: relative;
+  left: 15%;
+  right: 15%;
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  padding: 20px 0;
+  border-radius: 15px;
+}
+
+.content-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dynapuff-title {
+  background-image: url("../image/bg/wood.jpg");
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "DynaPuff", system-ui;
+  font-size: 45px;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 /* ====== PORTO CARD ====== */
-.xporto {
+.content .xporto {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
-  gap: 20px;
+  gap:40px;
 }
 
-.xporto a {
+.content .xporto a {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 220px;
-  background-color: #f8f1e4;
   text-decoration: none;
   border-radius: 15px;
   overflow: hidden;
@@ -40,49 +70,47 @@
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.xporto a:hover {
+.content .xporto a:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
-.card-text {
+.content .xporto a .card-text {
   width: 100%;
   margin-top: auto;
   padding: 15px 10px;
-  font-family: 'Segoe UI', sans-serif;
   font-size: 18px;
   font-weight: 600;
-  color: #222;
+  color: #000;
   text-align: center;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
-/* ====== BACKGROUND PHOTO CARD ====== */
-.xporto a.kevin {
+.content .xporto a.kevin {
   background-image: url("../image/img_kevin/kevin.png");
   background-size: cover;
   height: 300px;
 }
 
-.xporto a.panji {
+.content .xporto a.panji {
   background-image: url("../image/img_panji/profil_panji.jpg");
   background-size: cover;
   height: 300px;
 }
 
-.xporto a.rian {
+.content .xporto a.rian {
   background-image: url("../image/img_rian/rian.jpeg");
   background-size: cover;
   height: 300px;
 }
 
-.xporto a.denny {
+.content .xporto a.denny {
   background-image: url("../image/img_denny/denny.jpeg");
   background-size: cover;
   height: 300px;
 }
 
-.xporto a.new::before {
+.content .xporto a.new::before {
   content: "add";
   font-family: "Material Symbols Outlined";
   font-size: 80px;    /* atur ukuran icon */
@@ -90,18 +118,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  margin-top: 60px;
+  margin-top: 75px;
+
 }
-.xporto a.new {
-  margin-top: 20px;
+.content .xporto a.new {
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 250px;
   height: 300px;
-  background: #f0f0f0;
-  border-radius: 10px;
+  background: #ddd;
+  border-radius: 15px;
   text-decoration: none;
+}
+
+@media (max-width: 991px) {
+  .dynapuff-title {
+    font-size: 30px;
+  }
 }
 

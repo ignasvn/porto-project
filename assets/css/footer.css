@@ -1,26 +1,40 @@
+@import url("css_reset.css");
+/* ======================
+    FOOTER CSS
+====================== */
 .footer {
-  font-family: "Segoe UI", sans-serif;
-  background: #0e0e0e;
-  color: #ffffff;
-  text-align: center;
-  padding: 25px 20px;
-  margin-top: 50px;
-  border-top: 2px solid rgba(255,255,255,0.12);
+  border-radius: 15px 15px 0 0;
+  position: relative;
+  background-color: #0e0e0e;
+  padding: 25px 0;
+  box-shadow: 0 4px 20px rgb(0, 0, 0, 0.7);
 }
 
 .footer p {
-  margin: 6px 0;
-  font-size: 15px;
+  font: 15px "Segoe UI", Arial, sans-serif;
+  text-align: center;
+  color: #fff;
+  margin: 10px auto;
 }
 
-.footer a {
-  color: #ff9d00;
+.footer a i.fa-instagram {
+  color: #e2ba83;
   text-decoration: none;
-  font-weight: 600;
-  transition: 0.3s ease;
+  padding: 0 10px;
+}
+.footer a i.fa-github {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 10px;
 }
 
-.footer a:hover {
-  color: #ffd65a;
-  text-shadow: 0 0 8px rgba(255, 174, 0, 0.7);
+.footer a i.fa-whatsapp {
+  color: #63E6BE;
+  padding: 0 10px;
 }
+
+.footer a i:hover {
+  text-shadow: 0 0 8px #fff;
+  animation-play-state: paused;
+}
+

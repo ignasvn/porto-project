@@ -1,8 +1,5 @@
-/* contact.css — Styles for contact.html
-   Targets the existing structure in contact.html (no class on form)
-*/
+@import url("css_reset.css");
 
-/* Basic page layout */
 body {
   font-family: inherit;
   background: #fff;
@@ -11,7 +8,7 @@ body {
 
 .content {
   max-width: 980px;
-  margin: 48px auto;
+  margin: 68px auto;
   padding: 0 16px;
   display: flex;
   flex-direction: column;
