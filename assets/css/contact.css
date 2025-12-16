@@ -1,34 +1,35 @@
 @import url("css_reset.css");
 
 body {
-  font-family: inherit;
+  font-family: "Segoe UI", Verdana, sans-serif;
   background: #fff;
   color: #111827;
 }
 
 .content {
-  max-width: 980px;
-  margin: 68px auto;
-  padding: 0 16px;
+  box-sizing: border-box;
+  background-color: #ddd;
+  margin: 100px auto 40px auto;
+  max-width: 550px;
+  padding: 20px 10px 40px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 18px;
+  border-radius: 15px
 }
 
 .content h1 {
-  font-size: 1.75rem;
-  line-height: 1.15;
-  margin-bottom: 6px;
-  text-align: center;
+  font: bold normal 28px"Segoe UI", Verdana, sans-serif;
   color: #0b1320;
+  margin-bottom: 20px;
 }
 
 /* Form wrapper — the HTML form already has inline styles for layout,
    but these rules will standardize appearance and provide focus states */
 .contact-form {
+  /* background-color: red; */
   width: 100%;
-  max-width: 450px; /* matches markup in contact.html */
+  max-width: 450px;
   display: flex;
   flex-direction: column;
   gap: 12px;

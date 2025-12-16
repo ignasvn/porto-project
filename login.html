@@ -4,21 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login - Portofolio</title>
+  <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/navbar.css">
   <link rel="stylesheet" href="assets/css/footer.css">
-  <link rel="stylesheet" href="assets/css/login.css"> <!-- File baru khusus login -->
+  <link rel="stylesheet" href="assets/css/login.css"> 
 </head>
 <body>
 
 <!-- NAVBAR -->
 <div class="navbar">
-  <a href="index.html"><div class="logo-navbar"></div></a>
+  <a class="logo-navbar" href="index.html"></a>
+
+  <!-- Hamburger Toggle -->
+  <input type="checkbox" id="nav-toggle">
+  <label for="nav-toggle" class="nav-toggle">
+    ☰
+  </label>
+
+  <!-- MENU -->
   <div class="menu-navbar">
-    <a href="index.html">Home</a>
+    <a class="active" href="index.html">Home</a>
     <a href="beranda.html">Beranda</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
+    <a class="login-mobile" href="login.html">Log In</a>
   </div>
+
+  <!-- LOGIN DESKTOP -->
+  <a class="login-navbar" href="login.html">Log In</a>
+</div>
 
   <div class="login-navbar">
     <a class="active" href="login.html">Log In</a>
@@ -43,14 +57,14 @@
 </div>
 
 <!-- FOOTER -->
-<div class="footer">
-  <p>&copy; 2025 Ignatius Kevin Gunawan. All rights reserved.</p>
+<footer class="footer">
+  <p>&copy; 2025 Kevin Gunawan. All rights reserved.</p>
   <p>
-    <a href="https://instagram.com/ignasvn">Instagram</a> |
-    <a href="https://github.com/ignasvn">GitHub</a> |
-    <a href="mailto:kevindiagon@gmail.com">Email</a>
+    <a href="https://instagram.com/ignasvn"><i class="fa-brands fa-instagram fa-flip fa-lg"></i></a> |
+    <a href="https://github.com/ignasvn"><i class="fa-brands fa-github fa-bounce fa-lg"></i></a> |
+    <a href="tel:081313777672"><i class="fa-brands fa-whatsapp fa-beat fa-lg"></i></a>
   </p>
-</div>
+</footer>
 
 </body>
 </html>
