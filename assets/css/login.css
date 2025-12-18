@@ -26,7 +26,7 @@
   font-weight: 600;
   font-size: 14px;
   transition: all 0.3s ease;
-  margin-right: 20px; /* Jarak aman dari pinggir layar kanan */
+  margin-right: 0; /* Jarak aman dari pinggir layar kanan */
 }
 
 /* Efek Hover Tombol */
