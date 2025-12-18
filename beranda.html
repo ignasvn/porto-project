@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Beranda</title>
+    <link rel="icon" href="assets/image/logo/p.png" type="image" sizes="32x32">
     <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/beranda.css">
@@ -33,19 +34,29 @@
     <a class="login-navbar" href="login.html">Log In</a>
     </div>
     <!-- CONTENT -->
-    <div class="form-submit-portofolio">
-        <h1>Portofolio Submission Form</h1>
-        <form action="" method="post">
-            <label for="file">Upload Foto Cover Website: </label>
-            <input type="file" file="file" id="file" placeholder="">
-            <label for="name">Nama lengkap</label>
-            <input type="text" name="name" id="name" placeholder="">
-            <label for="email">Email</label>
-            <input type="text" name="email" id="email" placeholder="">
-            <label for="link">Link Website Portofolio</label>
-            <input type="text" name="link" id="link" placeholder="">
-            <button type="submit" name="" id="">Publish Portofolio</button>
-        </form>
+    <div class="content">
+        <div class="content-form">
+            <div class="side-img">
+                <div class="bg bg1"></div>
+                <div class="bg bg2"></div>
+                <div class="bg bg3"></div>
+                <div class="bg bg4"></div>
+                <div class="bg bg5"></div>
+            </div>
+            <form action="" method="post">
+                <h1>Upload Your Porto</h1>
+                <hr>
+                <label for="file">Cover</label>
+                <input type="file" name="file" id="file" placeholder="">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="ex: Kevin Gunawan">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="ex: kevin@example.com">
+                <label for="link">Link Porto</label>
+                <input type="text" name="link" id="link" placeholder="ex: https://kevingunawan.com">
+                <button type="submit" name="submit" id="submit">Publish</button>
+            </form>
+        </div>
     </div>
    
     <!-- FOOTER -->

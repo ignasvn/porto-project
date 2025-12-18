@@ -1,15 +1,29 @@
 @import url("css_reset.css");
-.content{
-margin: 125px auto 65px auto;
+
+body {
+    background-color: #EBF4DD; /* Warna 1: Background Utama */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    font-family: "Segoe UI", Verdana, sans-serif;
+    display: flex;
+    flex: 1;
+    align-items: center; 
+    margin-top: 60px;
+    padding: 0 20px; /* Tambahan padding agar di HP tidak mepet pinggir */
 }
 
 .about-card {
     max-width: 900px;
-    padding: 15px 30px;
+    padding: 40px 30px;
     margin: auto;
     border-radius: 20px;
-    background-color: #eee;
-    box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+    background-color: #90AB8B; /* Warna 2: Card Background (Sage) */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15); /* Shadow lebih soft */
+    border: 2px solid #5A7863; /* Warna 3: Border Aksen */
 }
 
 .about-card .about-title {
@@ -18,15 +32,17 @@ margin: 125px auto 65px auto;
 
 .about-card h1 {
     text-align: center;
-    font: bold normal 38px "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(90deg, #3f0909, #aa3304, #cb8543);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 38px;
+    font-weight: bold;
+    color: #3B4953; /* Warna 4: Judul Gelap (Agar kontras) */
     margin: 0;
 }
 
 .about-card .p {
     text-align: center;
-    font: normal normal 16px/1.8 "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
     margin: 0px;
+    color: #ffffff; /* Teks Putih: Paling enak dibaca di atas hijau sage */
+    /* Jika ingin teks warna cream palette, ganti jadi color: #EBF4DD; */
 }
