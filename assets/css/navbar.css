@@ -1,14 +1,21 @@
 @import url("css_reset.css");
 
-/* ====== NAVBAR ====== */
+/* ====== WARNA PALETTE ====== 
+   Lightest: #EBF4DD (Hover background)
+   Light:    #90AB8B (Active state)
+   Medium:   #5A7863 (Buttons/Accents)
+   Dark:     #3B4953 (Text/Hover Buttons)
+============================= */
+
 * {
   box-sizing: border-box;
 }
 
+/* ====== NAVBAR UTAMA ====== */
 .navbar {
-  font-family:"Segoe UI", Arial, sans-serif;
-  background: #fff;
-  box-shadow: 0 6px 5px rgba(0,0,0,0.2);
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #ffffff; /* Tetap putih agar bersih & kontras dengan body */
+  box-shadow: 0 6px 5px rgba(0,0,0,0.1); /* Shadow lebih halus */
   padding: 0 15px;
   border-radius: 0 0 15px 15px;
   display: flex;
@@ -19,17 +26,24 @@
   right: 0;
   height: 60px;
   z-index: 1000;
+  color: #3B4953; /* Warna Teks Utama */
 }
 
 /* LOGO */
 .logo-navbar {
   background-image: url("../image/logo/porto-resize.png");
   background-size: contain;
+  background-repeat: no-repeat;
   height: 40px;
   width: 120px;
 }
 
-/* HAMBURGER */
+/* SPACER (Penting untuk Login Page agar tombol ke kanan) */
+.nav-spacer {
+  flex: 1;
+}
+
+/* HAMBURGER (Mobile) */
 #nav-toggle {
   display: none;
 }
@@ -39,9 +53,10 @@
   font-size: 26px;
   cursor: pointer;
   margin-left: auto;
+  color: #5A7863; /* Warna Icon Hamburger */
 }
 
-/* MENU */
+/* MENU (Desktop) */
 .menu-navbar {
   display: flex;
   align-items: center;
@@ -52,37 +67,74 @@
 
 .menu-navbar a {
   font-size: 18px;
-  color: #000;
+  color: #3B4953; /* Warna Teks Menu */
   padding: 10px 16px;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
-.menu-navbar a:hover,
+/* Efek Hover Menu */
+.menu-navbar a:hover {
+  background: #EBF4DD; /* Hijau Muda Lembut */
+  color: #3B4953;
+}
+
+/* Efek Menu Aktif (Halaman yang sedang dibuka) */
 .menu-navbar a.active {
-  background: #ddd;
-  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  background: #90AB8B; /* Sage Green */
+  color: #ffffff;      /* Teks jadi putih */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* LOGIN DESKTOP */
+/* ====== TOMBOL LOGIN (Main Page) ====== */
 .login-navbar {
-  background: #ddd;
-  padding: 8px 16px;
+  background: #5A7863; /* Hijau Tua (Button Color) */
+  padding: 8px 20px;
   text-decoration: none;
   font-weight: 600;
-  border-radius: 5px;
-  color: #000;
-}
-.login-navbar:hover {
-  background: #ccc;
-  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  border-radius: 8px;
+  color: #ffffff; /* Teks Putih */
+  transition: all 0.3s ease;
 }
 
-/* LOGIN MOBILE */
+.login-navbar:hover {
+  background: #3B4953; /* Berubah jadi Dark Slate saat hover */
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Login Mobile (Hidden di Desktop) */
 .login-mobile {
   display: none;
   margin-top: 10px;
 }
+
+/* ====== TOMBOL "BACK TO HOME" (Khusus Halaman Login) ====== */
+/* Saya sertakan disini agar satu file css bisa untuk semua */
+.btn-back-home {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  background-color: #5A7863; /* Hijau Tua */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  margin-right: 20px;
+}
+
+.btn-back-home:hover {
+  background-color: #3B4953; /* Dark Slate */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
 
 /* ======================
    TABLET & HP
@@ -92,21 +144,22 @@
     display: block;
   }
 
+  /* Dropdown Menu Mobile */
   .menu-navbar {
     position: absolute;
-    max-height: calc(100vh - 80px);
-    position: absolute;
-    top: 100px;
-    left: 25%;
-    right: 25%;
-    background: #fff;
+    top: 70px; /* Sedikit diturunkan */
+    left: 5%;  /* Lebar disesuaikan agar rapi */
+    right: 5%;
+    background: #ffffff;
     flex-direction: column;
-    display: none;
-    padding: 10px 0;
-    box-shadow: 0 6px 5px rgba(0,0,0,0.7);
-    border-radius: 0 0 15px 15px;
+    display: none; /* Default hidden */
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    border-radius: 15px;
+    border: 1px solid #EBF4DD;
   }
 
+  /* Tampilkan menu saat checkbox dicentang */
   #nav-toggle:checked ~ .menu-navbar {
     display: flex;
   }
@@ -114,21 +167,25 @@
   .menu-navbar a {
     width: 100%;
     text-align: center;
+    padding: 12px;
   }
 
+  /* Sembunyikan tombol login desktop di HP */
   .login-navbar {
     display: none;
   }
 
+  /* Tampilkan tombol login mobile */
   .login-mobile {
     display: block;
-    width: 90%;
+    width: 100%;
     text-align: center;
+    background: #5A7863;
+    color: #fff !important; /* Paksa putih */
   }
 
   .login-mobile:hover {
-    background: #ccc;
-    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    background: #3B4953;
   }
 }
 

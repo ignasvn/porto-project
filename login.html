@@ -12,30 +12,16 @@
 </head>
 <body>
 
-<!-- NAVBAR -->
 <div class="navbar">
   <a class="logo-navbar" href="index.html"></a>
 
-  <!-- Hamburger Toggle -->
-  <input type="checkbox" id="nav-toggle">
-  <label for="nav-toggle" class="nav-toggle">
-    ☰
-  </label>
+  <div class="nav-spacer"></div>
 
-  <!-- MENU -->
-  <div class="menu-navbar">
-    <a href="index.html">Home</a>
-    <a href="beranda.html">Beranda</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a class="login-mobile" href="login.html">Log In</a>
-  </div>
-
-  <!-- LOGIN DESKTOP -->
-  <a class="login-navbar" href="login.html">Log In</a>
+  <a class="btn-back-home" href="index.html">
+    <i class="fa-solid fa-arrow-left"></i> Home
+  </a>
 </div>
 
-<!-- CONTENT -->
 <div class="content">
   
   <div class="bg-login-card">
@@ -61,7 +47,6 @@
 
 </div>
 
-<!-- FOOTER -->
 <footer class="footer">
   <p>&copy; 2025 Kevin Gunawan. All rights reserved.</p>
   <p>
@@ -71,19 +56,13 @@
   </p>
 </footer>
 
-<!-- JS -->
 <script>
     const togglePassword = document.querySelector("#togglePassword");
     const password = document.querySelector("#password");
 
     togglePassword.addEventListener("click", function () {
-        // 1. Cek tipe atribut saat ini (password atau text?)
         const type = password.getAttribute("type") === "password" ? "text" : "password";
-        
-        // 2. Ubah tipe atributnya
         password.setAttribute("type", type);
-        
-        // 3. Ubah ikon mata (jadi ada garis coret atau tidak)
         this.classList.toggle("fa-eye");
         this.classList.toggle("fa-eye-slash");
     });

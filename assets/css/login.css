@@ -1,9 +1,46 @@
 @import url("css_reset.css");
 
+/* --- KHUSUS NAVBAR LOGIN --- */
+/* Pastikan Navbar menggunakan Flexbox */
+.navbar {
+  display: flex;
+  align-items: center; 
+  /* Jika navbar.css sudah ada padding/height, ini akan menyesuaikan */
+}
+
+/* Spacer: Mengisi ruang kosong agar tombol terdorong ke kanan */
+.nav-spacer {
+  flex: 1; 
+}
+
+/* Desain Tombol "Back to Home" */
+.btn-back-home {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Jarak icon dan teks */
+  text-decoration: none;
+  background-color: #5A7863; /* Warna Hijau Sage */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px; /* Sudut tumpul */
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  margin-right: 20px; /* Jarak aman dari pinggir layar kanan */
+}
+
+/* Efek Hover Tombol */
+.btn-back-home:hover {
+  background-color: #3b5040; /* Warna lebih gelap saat disentuh */
+  transform: translateY(-2px); /* Efek tombol naik sedikit */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* --- END NAVBAR KHUSUS --- */
+
+
 body{
   background-color: #EBF4DD;
-
-  /* --- KODE STICKY FOOTER (WAJIB) --- */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,13 +63,12 @@ body{
   max-width: 400px;
   margin: 0 auto;
   box-shadow: 0 10px 25px rgba(0,0,0,0.15); 
-  border-radius: 20px; /* Sedikit lebih bulat biar modern */
+  border-radius: 20px;
 }
 
-/* KARTU UTAMA (Sekarang jadi Putih) */
-/* BAGIAN ATAS (Area Logo) */
+/* KARTU UTAMA */
 .login-card {
-  background-color: #ffffff; /* WARNA PAS: Putih bersih agar logo hitam KELIHATAN JELAS */
+  background-color: #ffffff;
   border-radius: 20px;
   padding: 0; 
   overflow: hidden;
@@ -40,13 +76,12 @@ body{
   flex-direction: column;
 }
 
-/* Judul (Sekarang ada di dalam area hijau) */
 .login-card h1 {
-  color: #ffffff; /* Ubah jadi PUTIH agar kontras dengan background hijau */
+  color: #ffffff;
   text-align: center;
   font-size: 16px;
-  margin-top: 0;      /* Hapus jarak atas */
-  margin-bottom: 10px; /* Jarak ke input username */
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 600;
 }
 
@@ -56,15 +91,14 @@ body{
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  width: 120px; /* Ukuran saya besarkan sedikit biar gagah */
+  width: 120px;
   height: 100px;
-  /* Trik Center Logo: */
-  margin: 30px auto; /* Jarak atas-bawah 30px, Kiri-kanan Auto (Tengah) */
+  margin: 30px auto;
 }
 
-/* BAGIAN BAWAH (Area Form & Judul) */
+/* BAGIAN FORM */
 .login-card form {
-  background-color: #90AB8B; /* Warna Hijau Portofolio */
+  background-color: #90AB8B;
   padding: 30px 25px;
   display: flex;
   flex-direction: column;
@@ -72,16 +106,14 @@ body{
   color: white;
 }
 
-/* Input Styles */
 .login-card input {
   padding: 12px;
   border-radius: 8px;
   border: none;
   font-size: 16px;
-  background-color: #f1f8f0; /* Putih kehijauan soft */
+  background-color: #f1f8f0;
 }
 
-/* Link Forgot Password */
 .forgot-link {
   font-size: 13px;
   text-align: right;
@@ -94,7 +126,6 @@ body{
   text-decoration: underline;
 }
 
-/* Tombol Login */
 .login-card button {
   padding: 12px;
   border-radius: 8px;
@@ -113,40 +144,34 @@ body{
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* Responsif */
 @media screen and (max-width: 500px) {
   .bg-login-card {
-    margin: 0 15px; /* Biar ada jarak di HP */
+    margin: 0 15px;
   }
 }
 
-/* --- TAMBAHAN UNTUK TOMBOL MATA PASSWORD --- */
-
-/* 1. Wadah pembungkus input password agar kita bisa atur posisi icon */
+/* --- TOMBOL MATA PASSWORD --- */
 .password-container {
-  position: relative; /* Penting: agar icon 'absolute' mengacu ke kotak ini */
+  position: relative;
   width: 100%;
 }
 
-/* 2. Pastikan input password memenuhi wadah */
 .password-container input {
   width: 100%;
-  padding-right: 40px; /* Beri jarak di kanan agar teks tidak tertutup icon mata */
-  box-sizing: border-box; /* Agar padding tidak melebarkan ukuran total */
+  padding-right: 40px;
+  box-sizing: border-box;
 }
 
-/* 3. Posisi Icon Mata */
 .password-container i {
   position: absolute;
-  right: 15px;         /* Jarak dari kanan */
-  top: 50%;            /* Posisi tengah vertikal */
-  transform: translateY(-50%); /* Koreksi posisi agar benar-benar di tengah */
-  cursor: pointer;     /* Ubah kursor jadi telunjuk saat diarahkan */
-  color: #5A7863;      /* Warna Hijau Tua (sesuai palet) */
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #5A7863;
   font-size: 18px;
 }
 
-/* Efek hover pada mata */
 .password-container i:hover {
   color: #2e4134;
 }
