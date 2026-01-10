@@ -175,3 +175,42 @@ body{
 .password-container i:hover {
   color: #2e4134;
 }
+/* Centering text and spacing for footer links */
+.register-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.form-instruction {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Secondary button style for Register link */
+.btn-register-secondary {
+    display: block;
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #5A7863;
+    border: 1px solid #5A7863;
+    color: #ddd;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-register-secondary:hover {
+    background-color: #5A7863;
+    color: #fff;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #666;
+    display: inline-block;
+    margin-top: 10px;
+}

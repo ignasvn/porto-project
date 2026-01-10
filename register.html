@@ -1,31 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <link rel="icon" href="assets/image/logo/p.png" type="image" sizes="32x32">
+    <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/register.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+</head>
+<body>
+<!-- NAVBAR -->
+    <div class="navbar">
+    <a class="logo-navbar" href="index.html"></a>
+
+    <!-- Hamburger Toggle -->
+    <input type="checkbox" id="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle">
+        ☰
+    </label>
+
+    <!-- MENU -->
+  <div class="navbar">
+  <a class="logo-navbar" href="index.html"></a>
+
+  <div class="nav-spacer"></div>
+
+  <a class="btn-back-home" href="index.html">
+    <i class="fa-solid fa-arrow-left"></i> Home
+  </a>
+</div>
+
+    <!-- LOGIN DESKTOP -->
+    <a class="login-navbar" href="login.html">Log In</a>
+    </div>
+
 <div class="content">
   <div class="bg-login-card">
     <div class="login-card">
-      <div class="login-logo"></div>
       <form>
-        <h1>Buat Akun Baru</h1>
+        <h1>Create Account</h1>
+        <hr>
         
-        <label for="fullname">Nama Lengkap</label>
-        <input type="text" name="fullname" id="fullname" placeholder="Masukkan nama lengkap" required>
+        <label for="fullname">Full Name</label>
+        <input type="text" name="fullname" id="fullname" placeholder="Enter your full name" required>
 
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="contoh@mail.com" required>
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" placeholder="example@mail.com" required>
 
         <label for="reg-username">Username</label>
-        <input type="text" name="reg-username" id="reg-username" required>
+        <input type="text" name="reg-username" id="reg-username" placeholder="Choose a username" required>
           
         <label for="reg-password">Password</label>
-        <input type="password" name="reg-password" id="reg-password" required>
+        <input type="password" name="reg-password" id="reg-password" placeholder="Create a password" required>
 
-        <label for="confirm-password">Konfirmasi Password</label>
-        <input type="password" name="confirm-password" id="confirm-password" required>
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" name="confirm-password" id="confirm-password" placeholder="Repeat your password" required>
           
-        <button type="submit" name="register" id="register">Daftar Sekarang</button>
+        <button type="submit" name="register" id="register">Sign Up</button>
         
-        <div class="login-link-section">
-          <p>Sudah punya akun? <a href="/login.html">Login di sini</a></p>
+        <div style="text-align: center; margin-top: 15px; font-size: 14px;">
+          <p>Already have an account? <a href="login.html" style="color: #3B4953; font-weight: bold;">Login here</a></p>
         </div>
       </form>
     </div>
   </div>
 </div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>&copy; 2025 Kevin Gunawan. All rights reserved.</p>
+    <p>
+        <a href="https://instagram.com/ignasvn"><i class="fa-brands fa-instagram fa-flip fa-lg"></i></a> |
+        <a href="https://github.com/ignasvn"><i class="fa-brands fa-github fa-bounce fa-lg"></i></a> |
+        <a href="tel:081313777672"><i class="fa-brands fa-whatsapp fa-beat fa-lg"></i></a>
+    </p>
+</footer>

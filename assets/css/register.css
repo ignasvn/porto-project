@@ -1,0 +1,53 @@
+/* Focus on Content Only - REGISTER */
+.content {
+    font-family: "Segoe UI", sans-serif;
+    max-width: 450px;
+    margin: 80px auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    background-color: #90AB8B;
+    border: 4px solid #5A7863;
+    border-radius: 18px;
+    padding: 30px;
+}
+
+.content h1 {
+    text-align: center;
+    color: #3B4953;
+}
+
+.content label {
+    display: block;
+    font-weight: 600;
+    color: #3B4953;
+    margin-top: 10px;
+}
+
+.content input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid #5A7863;
+    background: #EBF4DD;
+    box-sizing: border-box;
+}
+
+#register {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: #3B4953;
+    color: #EBF4DD;
+    border: none;
+    border-radius: 999px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.form-footer {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #3B4953;
+}
